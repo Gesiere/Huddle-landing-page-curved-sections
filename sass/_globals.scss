@@ -1,0 +1,60 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+html,body{
+    margin: 0;
+    // height: 100%;
+    font-family: "Open Sans", sans-serif; 
+    // overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4{
+    font-family:'Poppins', sans-serif; 
+    font-weight: 600;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 2rem;
+    opacity: 0.9;
+}
+
+
+p{
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.fa{
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+
+}
+
+.footer-phone img,
+.footer-email img{
+    width: 25px;
+    height: 25px;
+}
+
+.header-logo img,
+.footer-logo .footer-image img{
+    width: 150px;
+}
+
+

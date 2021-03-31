@@ -1,0 +1,40 @@
+$primary-Pink: hsl(322, 100%, 66%);
+$primary-Light-Pink: hsl(321, 100%,78%);
+$primary-Light-Red: hsl(0, 100%, 63%);
+$neutral-Very-Dark-Cyan: hsl(192, 100%, 9%);
+$neutral-Very-Pale-Blue: hsl(207, 100%, 98%);
+
+
+// media queries
+
+@mixin mobile(){
+    @media (max-width: 600px){
+            @content;
+    }
+}
+
+@mixin desktop(){
+    @media (min-width: 60em){
+        @content;
+    }
+}
+
+@mixin button($paddingtb, $paddinglr, $radius){
+    background-color: $primary-Pink;
+    color: $neutral-Very-Pale-Blue;
+    padding: $paddingtb $paddinglr;
+    border-radius: $radius;
+    font-weight: 600;
+    margin-bottom: 5rem;
+    box-shadow: 0px 5px 15px rgba(black, 0.2);
+    transition: background 300ms ease-in-out;
+    &:hover{
+        background-color: #fff;
+        color: $primary-Light-Pink;
+        border: 2px solid $primary-Light-Pink;
+    }
+}
+
+
+
+

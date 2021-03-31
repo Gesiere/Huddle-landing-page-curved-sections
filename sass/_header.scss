@@ -1,0 +1,41 @@
+.section-top{
+    max-width: 1100px;
+    margin: 0 auto;
+    @include desktop{
+        padding-top: 3rem
+    }
+    @include mobile{
+        margin: 2rem;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4rem;
+
+        img{
+            width: 150px;
+            @include mobile{
+                width: 120px;
+            }
+        }
+        &-link{
+            
+            a{
+                border: 1px solid $primary-Pink;
+                background-color: transparent;
+                padding: 0.5rem 2rem;
+                border-radius: 50px;
+                color: $primary-Pink;
+                font-weight: lighter;
+                box-shadow: 0px 3px 8px rgba(black, 0.2);
+                transition: background 200ms ease-in;
+                &:hover{
+                    background: $primary-Pink;
+                    color: #fff;
+                }
+                
+            }
+        }
+    }
+}
